@@ -1,0 +1,137 @@
+#V_1 {
+  top: -15px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: #2e2e2e;
+  clip-path: polygon(20% 40%, 40% 40%, 60% 25%, 60% 85%, 40% 70%, 20% 70%);
+  z-index: 3;
+}
+
+#V_2 {
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  width: 50px;
+  height: 50px;
+  background-color: #dddddd;
+  clip-path: polygon(50% 0, 70% 50%, 50% 100%, 42% 100%, 66% 50%, 42% 0);
+  z-index: 1;
+}
+
+#V_3 {
+  position: relative;
+  top: 0px;
+  left: -28px;
+  width: 20px;
+  height: 37px;
+  animation-name: "";
+  animation-duration: 1s;
+  color: #1a1a1a;
+  background-color: #1a1a1a;
+  clip-path: polygon(
+    30% 25%,
+    30% 75%,
+    90% 50%,
+    30% 25%,
+    30% 75%,
+    60% 50%,
+    48% 50%,
+    37% 62%,
+    34% 53%,
+    33% 36%
+  );
+  z-index: 3;
+}
+
+#V_4 {
+  top: 30px;
+  left: 80px;
+  width: 25px;
+  height: 40px;
+  background-color: #dddddd;
+  clip-path: polygon(30% 25%, 30% 75%, 75% 50%);
+  z-index: 1;
+}
+
+#pclider {
+  top: 30px;
+  left: 80px;
+  width: 25px;
+  height: 25px;
+  border-style: none;
+  outline: none;
+  background-color: rgba(0%, 0%, 100%, 0);
+  clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 99%);
+  z-index: -1;
+}
+
+#DIV_V {
+  width: 120px;
+  height: 120px;
+  background-color: #000000;
+  clip-path: inset(0 0 0 0);
+  z-index: 2;
+}
+
+@keyframes play2pause {
+  0% {
+    clip-path: polygon(
+      30% 25%,
+      30% 75%,
+      90% 50%,
+      30% 25%,
+      30% 75%,
+      60% 50%,
+      48% 50%,
+      37% 62%,
+      34% 53%,
+      33% 36%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      18% 25%,
+      18% 76%,
+      40% 76%,
+      40% 25%,
+      59% 25%,
+      59% 76%,
+      36% 76%,
+      18% 76%,
+      81% 76%,
+      80% 25%
+    );
+  }
+}
+
+@keyframes pause2play {
+  0% {
+    clip-path: polygon(
+      18% 25%,
+      18% 76%,
+      40% 76%,
+      40% 25%,
+      59% 25%,
+      59% 76%,
+      36% 76%,
+      18% 76%,
+      81% 76%,
+      80% 25%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      30% 25%,
+      30% 75%,
+      90% 50%,
+      30% 25%,
+      30% 75%,
+      60% 50%,
+      48% 50%,
+      37% 62%,
+      34% 53%,
+      33% 36%
+    );
+  }
+}

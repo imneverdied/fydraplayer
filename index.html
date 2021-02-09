@@ -1,0 +1,43 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<link href="css/player.css" rel="stylesheet" type="text/css">
+	<link rel=stylesheet href="css/Vplay.css" type="text/css">
+</head>
+
+<body onload="Video();FVideo();getsliderVolume();">
+	<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+	<div id="player"></div>
+	</br>
+
+
+	<div style="display:inline">
+		<input type="button" value=" " id="pclider" onclick="playVideo()"/>
+		<input type="button" value=" " id="V_3" onclick="playVideo()"/>
+  </div>
+
+		<div id="vedioplayercss" style="display:inline;">
+			<div id="time" style="display:inline;">1</div> /
+			<div id="Ftime" style="display:inline;">1</div>
+		</div>
+
+		<div class="slidecontainer" style="display:inline;">
+			<input type="button" value=" " id="V_1"  onclick="muteVideo()" />
+			<input type="range" min="0" max="100" value="50" class="slider" id="voiceslider" style="display:inline;">
+			<p id="voice" class="" style="display:inline;">0</p>
+		</div>
+
+
+
+
+
+
+		<!-- <input type="button" value="stopVideo" onClick="stopVideo()" />-->
+</body>
+
+
+
+</html>
+<script src="js/script.js"></script>
