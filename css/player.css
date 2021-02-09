@@ -4,9 +4,12 @@
   background: black;
   margin: 5px;
   padding: 4px;
+  position: relative;
+  top: 0px;
+  left: -30px;
   border: solid rgb(231, 224, 224) 1px;
   border-radius: 5px;
-  width: 140px;
+  width: 100px;
   text-align: center;
 }
 @import url(https://fonts.googleapis.com/css?family=Dosis:700);
@@ -28,6 +31,9 @@ body {
   text-shadow: white 2px 2px 2px;
 }
 input[type="range"] {
+  position: relative;
+  top: 0px;
+  left: -30px;
   display: block;
   -webkit-appearance: none;
   background-color: #bdc3c7;
@@ -40,8 +46,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #ffffff;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 2px solid black;
   cursor: pointer;
@@ -49,8 +55,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 ​ input[type="range"]::-webkit-slider-thumb:hover {
   background-color: white;
-  border: 2px solid #e74c3c;
+  border: 1px solid #e74c3c;
 }
 input[type="range"]::-webkit-slider-thumb:active {
-  transform: scale(1.6);
+  transform: scale(2);
 }
