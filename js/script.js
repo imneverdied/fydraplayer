@@ -39,6 +39,9 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
+function loopVideo() {
+  player.setLoop();
+}
 
 function playVideo() {
   var CS = document.getElementById("V_3");
