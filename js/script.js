@@ -15,8 +15,8 @@ function onYouTubeIframeAPIReady() {
     videoId: "ampmDPg4QrM",
     events: {
       onReady: onPlayerReady,
-      playVideo
-      //onStateChange: onPlayerStateChange
+      playVideo,
+      onStateChange: onPlayerStateChange
     }
   });
 }
@@ -31,9 +31,12 @@ function onPlayerReady(event) {
 //    the player should play for six seconds and then stop.
 var done = false;
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.ENDED && !done) {
-    setTimeout(playVideo, 3000); //播放停止後3秒重播
-    done = true;
+  // if (event.data == YT.PlayerState.ENDED && !done) {
+  //   setTimeout(playVideo, 3000); //播放停止後3秒重播
+  //   done = true;
+  // }
+  if (player.getPlayerState() == 0) {
+    setTimeout(playVideo, 2000);
   }
 }
 function stopVideo() {
