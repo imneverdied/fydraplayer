@@ -14,10 +14,10 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Dosis:700);
 body {
-  font-family: "Dosis", Helvetica, Arial, sans-serif;
+  font-family: 'Dosis', Helvetica, Arial, sans-serif;
   background: #ecf0f1;
   color: #34495e;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
   text-shadow: white 1px 1px 1px;
 }
 .value {
@@ -30,7 +30,7 @@ body {
   letter-spacing: -0.07em;
   text-shadow: white 2px 2px 2px;
 }
-input[type="range"] {
+input[type='range'] {
   position: relative;
   top: 0px;
   left: -30px;
@@ -43,7 +43,7 @@ input[type="range"] {
   margin: 0 auto;
   outline: 0;
 }
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
   background-color: #ffffff;
   width: 15px;
@@ -53,10 +53,10 @@ input[type="range"]::-webkit-slider-thumb {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-​ input[type="range"]::-webkit-slider-thumb:hover {
+​ input[type='range']::-webkit-slider-thumb:hover {
   background-color: white;
   border: 1px solid #e74c3c;
 }
-input[type="range"]::-webkit-slider-thumb:active {
+input[type='range']::-webkit-slider-thumb:active {
   transform: scale(2);
 }
