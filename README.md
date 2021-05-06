@@ -2,4 +2,4 @@ YOUTUBE API TEST
 ===================
 
 
-[fydraplayer ](https://imneverdied.github.io/fydraplayer/)
+[fydraplayer ](https://imneverdied.github.io/youtubeplayer/)
